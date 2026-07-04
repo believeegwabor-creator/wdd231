@@ -1,0 +1,63 @@
+/* ===========================
+   LARGER.CSS
+   Desktop Layout
+=========================== */
+
+@media screen and (min-width: 768px) {
+
+    header {
+        display: grid;
+        grid-template-columns: auto 1fr auto;
+        align-items: center;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    nav {
+        display: block;
+        width: auto;
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: flex-end;
+        gap: 1rem;
+    }
+
+    nav li {
+        border: none;
+    }
+
+    nav a {
+        padding: .75rem 1rem;
+        border-radius: 5px;
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 1rem;
+    }
+
+    #courses {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 1rem;
+    }
+
+    .buttons {
+        justify-content: center;
+    }
+
+    .buttons button {
+        max-width: 180px;
+    }
+
+    footer {
+        display: grid;
+        gap: .5rem;
+        justify-items: center;
+    }
+}
