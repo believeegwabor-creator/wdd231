@@ -1,0 +1,133 @@
+/* ===========================================
+   LARGE SCREEN STYLES
+   (768px and above)
+=========================================== */
+
+@media screen and (min-width: 768px) {
+
+    /* ===============================
+       HEADER
+    =============================== */
+
+    .header-container {
+        padding: 1rem 2rem;
+    }
+
+    #menu-button {
+        display: none;
+    }
+
+    nav {
+        display: block;
+    }
+
+    .navigation {
+        display: flex;
+        flex-direction: row;
+        gap: .5rem;
+    }
+
+    .navigation a {
+        padding: .75rem 1rem;
+        border-radius: 5px;
+        transition: var(--transition);
+    }
+
+    .navigation a:hover {
+        background: rgba(255,255,255,.15);
+    }
+
+    /* ===============================
+       PAGE HEADER
+    =============================== */
+
+    .page-header {
+        padding: 2rem 0;
+    }
+
+    .page-header h2 {
+        font-size: 2.2rem;
+    }
+
+    .page-header p {
+        max-width: 700px;
+        margin: auto;
+    }
+
+    /* ===============================
+       VIEW BUTTONS
+    =============================== */
+
+    .view-controls {
+        justify-content: flex-end;
+    }
+
+    /* ===============================
+       DIRECTORY GRID
+    =============================== */
+
+    .grid-view {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+
+    /* ===============================
+       MEMBER CARD
+    =============================== */
+
+    .member-card {
+        padding: 1.5rem;
+    }
+
+    .member-card img {
+        width: 140px;
+    }
+
+    /* ===============================
+       LIST VIEW
+    =============================== */
+
+    .list-view {
+        display: flex;
+        flex-direction: column;
+        gap: .75rem;
+    }
+
+    .list-view .member-card {
+        display: grid;
+
+        grid-template-columns:
+            140px
+            2fr
+            1fr
+            1fr;
+
+        align-items: center;
+
+        text-align: left;
+
+        padding: 1rem 1.5rem;
+    }
+
+    .list-view .member-card img {
+        width: 100px;
+        margin: 0;
+    }
+
+    /* ===============================
+       FOOTER
+    =============================== */
+
+    .footer-content {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+
+        align-items: center;
+
+        text-align: left;
+    }
+
+    .social-links {
+        justify-content: center;
+    }
+
+}
