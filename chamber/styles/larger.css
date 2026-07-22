@@ -143,3 +143,8 @@
     }
 
 }
+
+.join-layout {
+    grid-template-columns: 2fr 1fr;
+    align-items: start;
+}
