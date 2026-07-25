@@ -19,6 +19,7 @@
 
     nav {
         display: block;
+        width: auto;
     }
 
     .navigation {
@@ -45,6 +46,7 @@
         padding: 2rem 0;
     }
 
+    .page-header h1,
     .page-header h2 {
         font-size: 2.2rem;
     }
@@ -55,7 +57,7 @@
     }
 
     /* ===============================
-       VIEW BUTTONS
+       VIEW CONTROLS
     =============================== */
 
     .view-controls {
@@ -94,17 +96,9 @@
 
     .list-view .member-card {
         display: grid;
-
-        grid-template-columns:
-            140px
-            2fr
-            1fr
-            1fr;
-
+        grid-template-columns: 140px 2fr 1fr 1fr;
         align-items: center;
-
         text-align: left;
-
         padding: 1rem 1.5rem;
     }
 
@@ -120,9 +114,7 @@
     .footer-content {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-
         align-items: center;
-
         text-align: left;
     }
 
@@ -130,21 +122,47 @@
         justify-content: center;
     }
 
-}
+    /* ===============================
+       HERO SECTION
+    =============================== */
 
-/* ===============================
-   DESKTOP SPOTLIGHTS
-=============================== */
+    .hero {
+        position: relative;
+    }
 
-@media screen and (min-width: 768px) {
+    .hero-content {
+        position: absolute;
+        top: 50%;
+        left: 8%;
+        transform: translateY(-50%);
+        max-width: 500px;
+    }
+
+    /* ===============================
+       HOME PAGE GRID
+    =============================== */
+
+    .home-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+
+    /* ===============================
+       SPOTLIGHTS
+    =============================== */
 
     .spotlight-grid {
         grid-template-columns: repeat(3, 1fr);
     }
 
-}
+    /* ===============================
+       JOIN PAGE
+    =============================== */
 
-.join-layout {
-    grid-template-columns: 2fr 1fr;
-    align-items: start;
+    .join-layout {
+        grid-template-columns: 2fr 1fr;
+        align-items: start;
+    }
+
 }
