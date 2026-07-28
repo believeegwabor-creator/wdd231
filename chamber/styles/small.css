@@ -521,3 +521,115 @@ dialog::backdrop {
     }
 
 }
+
+/* ===========================================
+   DISCOVER PAGE
+=========================================== */
+
+.visitor-message {
+    background: var(--accent-color);
+    color: var(--text-color);
+    padding: 1rem;
+    margin-bottom: 2rem;
+    border-radius: .5rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+.discover-grid {
+    display: grid;
+    gap: 2rem;
+
+    grid-template-areas:
+        "card1"
+        "card2"
+        "card3"
+        "card4"
+        "card5"
+        "card6"
+        "card7"
+        "card8";
+}
+
+.discover-card {
+    background: var(--white);
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    overflow: hidden;
+    padding: 1rem;
+}
+
+.discover-card h2 {
+    color: var(--primary-color);
+    margin-top: 0;
+    font-family: var(--heading-font);
+}
+
+.discover-card figure {
+    margin: 1rem 0;
+}
+
+.discover-card img {
+    width: 100%;
+    height: auto;
+    border-radius: .5rem;
+}
+
+.discover-card address {
+    font-style: normal;
+    font-weight: 600;
+    margin: .75rem 0;
+}
+
+.discover-card p {
+    margin-bottom: 1rem;
+}
+
+.discover-card button {
+    background: var(--primary-color);
+    color: var(--white);
+    border: none;
+    padding: .75rem 1rem;
+    border-radius: .5rem;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.discover-card button:hover {
+    background: var(--accent-color);
+    color: var(--text-color);
+}
+
+/* Named Grid Areas */
+
+.discover-card:nth-child(1) {
+    grid-area: card1;
+}
+
+.discover-card:nth-child(2) {
+    grid-area: card2;
+}
+
+.discover-card:nth-child(3) {
+    grid-area: card3;
+}
+
+.discover-card:nth-child(4) {
+    grid-area: card4;
+}
+
+.discover-card:nth-child(5) {
+    grid-area: card5;
+}
+
+.discover-card:nth-child(6) {
+    grid-area: card6;
+}
+
+.discover-card:nth-child(7) {
+    grid-area: card7;
+}
+
+.discover-card:nth-child(8) {
+    grid-area: card8;
+}
