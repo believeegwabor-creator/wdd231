@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Forex Trading Academy | Learn to Trade Forex</title>
+
+    <meta name="description" content="Forex Trading Academy helps beginners and intermediate traders learn forex trading strategies, risk management, and market analysis.">
+
+    <meta name="author" content="Believe Egwabor">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Forex Trading Academy">
+    <meta property="og:description" content="Learn Forex Trading from Beginner to Professional.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="images/hero.webp">
+    <meta property="og:url" content="https://yourusername.github.io/wdd231/finalproject/">
+
+    <link rel="icon" href="favicon.ico">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/larger.css">
+
+</head>
+
+<body>
+
+<header>
+
+    <div class="logo">
+        <h1>Forex Trading Academy</h1>
+    </div>
+
+    <button id="menuBtn" aria-label="Open Navigation">
+        ☰
+    </button>
+
+    <nav id="navMenu">
+
+        <a href="index.html" class="active">Home</a>
+
+        <a href="strategies.html">Strategies</a>
+
+        <a href="resources.html">Resources</a>
+
+    </nav>
+
+</header>
+
+<main>
+
+<section class="hero">
+
+    <div class="hero-content">
+
+        <h2>Master Forex Trading with Confidence</h2>
+
+        <p>
+
+            Learn professional trading strategies, understand market trends,
+            and improve your trading psychology through simple, practical lessons.
+
+        </p>
+
+        <a href="strategies.html" class="btn">
+            Explore Strategies
+        </a>
+
+    </div>
+
+</section>
+
+<section class="about">
+
+    <h2>About Forex Trading Academy</h2>
+
+    <p>
+
+        Forex Trading Academy is an educational platform designed to help
+        beginner and intermediate traders build confidence in the foreign
+        exchange market. We provide practical strategies, trading psychology,
+        and risk management principles that encourage disciplined trading.
+
+    </p>
+
+</section>
+
+<section class="features">
+
+    <h2>Why Learn With Us?</h2>
+
+    <div class="feature-grid">
+
+        <article class="feature-card">
+
+            <h3>Trading Strategies</h3>
+
+            <p>
+
+                Discover proven trading strategies suitable for different
+                market conditions.
+
+            </p>
+
+        </article>
+
+        <article class="feature-card">
+
+            <h3>Risk Management</h3>
+
+            <p>
+
+                Learn how to protect your trading capital using proper risk
+                management techniques.
+
+            </p>
+
+        </article>
+
+        <article class="feature-card">
+
+            <h3>Trading Psychology</h3>
+
+            <p>
+
+                Develop discipline, patience, and emotional control for
+                consistent trading performance.
+
+            </p>
+
+        </article>
+
+    </div>
+
+</section>
+
+<section class="featured">
+
+    <h2>Featured Trading Strategies</h2>
+
+    <div class="feature-grid">
+
+        <article class="strategy-preview">
+
+            <h3>Price Action</h3>
+
+            <p>
+
+                Learn to read market structure without relying on indicators.
+
+            </p>
+
+        </article>
+
+        <article class="strategy-preview">
+
+            <h3>Breakout Trading</h3>
+
+            <p>
+
+                Identify strong price movements after key support and resistance levels break.
+
+            </p>
+
+        </article>
+
+        <article class="strategy-preview">
+
+            <h3>Swing Trading</h3>
+
+            <p>
+
+                Hold positions for several days to capture larger market moves.
+
+            </p>
+
+        </article>
+
+    </div>
+
+</section>
+
+<section class="call-to-action">
+
+    <h2>Start Learning Today</h2>
+
+    <p>
+
+        Explore more than 15 trading strategies and improve your understanding
+        of the Forex market.
+
+    </p>
+
+    <a href="strategies.html" class="btn">
+        View All Strategies
+    </a>
+
+</section>
+
+</main>
+
+<footer>
+
+<p>
+
+© 2026 Forex Trading Academy
+
+</p>
+
+<p>
+
+<a href="attributions.html">
+Attributions
+</a>
+
+</p>
+
+<p>
+
+<a href="#">
+Video Demonstration
+</a>
+
+</p>
+
+<p>
+
+Last Modified:
+<span id="lastModified"></span>
+
+</p>
+
+</footer>
+
+<script>
+
+document.getElementById("lastModified").textContent =
+document.lastModified;
+
+const menuBtn =
+document.getElementById("menuBtn");
+
+const nav =
+document.getElementById("navMenu");
+
+menuBtn.addEventListener("click", () => {
+
+    nav.classList.toggle("open");
+
+});
+
+</script>
+
+</body>
+</html>
