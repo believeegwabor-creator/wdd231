@@ -1,652 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Forex Trading Academy | Learn Forex Trading</title>
 
-    <meta
-        name="description"
-        content="Learn forex trading strategies, risk management, market analysis, and trading psychology with Forex Trading Academy."
-    >
+    <meta name="description" content="Forex Trading Academy helps beginners and developing traders learn forex strategies, market analysis, risk management, and trading fundamentals.">
 
     <meta name="author" content="Believe Egwabor">
 
     <!-- Open Graph -->
-    <meta
-        property="og:title"
-        content="Forex Trading Academy | Learn Forex Trading"
-    >
-
-    <meta
-        property="og:description"
-        content="Learn forex trading strategies, risk management, market analysis, and trading psychology."
-    >
-
+    <meta property="og:title" content="Forex Trading Academy | Learn Forex Trading">
+    <meta property="og:description" content="Learn forex trading strategies, market analysis, and risk management through the Forex Trading Academy.">
     <meta property="og:type" content="website">
-
-    <meta
-        property="og:image"
-        content="https://believeegwabor-creator.github.io/wdd231/finalproject/images/hero.webp"
-    >
-
-    <meta
-        property="og:url"
-        content="https://believeegwabor-creator.github.io/wdd231/finalproject/"
-    >
-
-    <!-- Favicon -->
-    <link rel="icon" href="favicon.ico">
+    <meta property="og:url" content="https://believeegwabor-creator.github.io/wdd231/finalproject/">
+    <meta property="og:image" content="https://believeegwabor-creator.github.io/wdd231/finalproject/images/forex-academy.jpg">
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-
-    <link
-        rel="preconnect"
-        href="https://fonts.gstatic.com"
-        crossorigin
-    >
-
-    <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap"
-        rel="stylesheet"
-    >
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
 
     <!-- CSS -->
     <link rel="stylesheet" href="css/normalize.css">
-
     <link rel="stylesheet" href="css/base.css">
-
     <link rel="stylesheet" href="css/larger.css">
 
+    <!-- JavaScript -->
+    <script type="module" src="js/main.js"></script>
 </head>
-
 
 <body>
 
-    <!-- =========================
-         HEADER
-    ========================== -->
-
     <header class="site-header">
-
         <div class="header-container">
 
             <a href="index.html" class="logo">
-                <span>Forex Trading Academy</span>
+                <span>Forex</span> Trading Academy
             </a>
 
-
-            <button
-                id="menuBtn"
-                class="menu-button"
-                aria-label="Open Navigation"
-                aria-expanded="false"
-                aria-controls="navMenu"
-            >
+            <button id="menu-button" class="menu-button" aria-label="Open navigation menu">
                 ☰
             </button>
 
-
-            <nav id="navMenu" class="navigation">
-
-                <a
-                    href="index.html"
-                    class="active"
-                    aria-current="page"
-                >
-                    Home
-                </a>
-
-                <a href="strategies.html">
-                    Strategies
-                </a>
-
-                <a href="resources.html">
-                    Resources
-                </a>
-
+            <nav class="navigation" id="navigation">
+                <a href="index.html" class="active">Home</a>
+                <a href="strategies.html">Strategies</a>
+                <a href="resources.html">Resources</a>
             </nav>
 
         </div>
-
     </header>
-
-
-    <!-- =========================
-         MAIN
-    ========================== -->
 
     <main>
 
-
-        <!-- =========================
-             HERO
-        ========================== -->
-
         <section class="hero">
-
             <div class="hero-content">
+                <p class="eyebrow">FOREX EDUCATION</p>
 
-                <p class="eyebrow">
-                    FOREX EDUCATION
-                </p>
-
-                <h1>
-                    Master Forex Trading with Confidence
-                </h1>
+                <h1>Learn Forex Trading With Confidence</h1>
 
                 <p>
-                    Learn professional trading strategies, understand
-                    market trends, and improve your trading psychology
-                    through simple, practical lessons.
+                    Build your understanding of forex markets, trading strategies,
+                    risk management, and market analysis through practical learning resources.
                 </p>
 
-                <a
-                    href="strategies.html"
-                    class="btn"
-                >
-                    Explore Strategies
-                </a>
-
+                <div class="hero-buttons">
+                    <a href="strategies.html" class="button">Explore Strategies</a>
+                    <a href="resources.html" class="button secondary-button">Learning Resources</a>
+                </div>
             </div>
-
         </section>
 
-
-        <!-- =========================
-             ABOUT
-        ========================== -->
-
-        <section class="about-section">
-
+        <section class="intro-section">
             <div class="section-heading">
-
-                <h2>
-                    About Forex Trading Academy
-                </h2>
-
+                <p class="eyebrow">START LEARNING</p>
+                <h2>Build Your Trading Knowledge</h2>
                 <p>
-                    Build your knowledge before putting your money at risk.
+                    Forex Trading Academy provides educational information for people
+                    who want to understand the forex market and develop better trading habits.
                 </p>
-
             </div>
-
-
-            <div class="feature-card">
-
-                <p>
-                    Forex Trading Academy is an educational platform
-                    designed to help beginner and intermediate traders
-                    build confidence in the foreign exchange market.
-                    We provide practical strategies, trading psychology,
-                    and risk management principles that encourage
-                    disciplined trading.
-                </p>
-
-            </div>
-
-        </section>
-
-
-        <!-- =========================
-             WHY LEARN WITH US
-        ========================== -->
-
-        <section>
-
-            <div class="section-heading">
-
-                <h2>
-                    Why Learn With Us?
-                </h2>
-
-                <p>
-                    Focus on the skills that matter most when learning
-                    how the Forex market works.
-                </p>
-
-            </div>
-
 
             <div class="feature-grid">
 
-
                 <article class="feature-card">
-
-                    <div class="feature-icon" aria-hidden="true">
-                        📊
-                    </div>
-
-                    <h3>
-                        Trading Strategies
-                    </h3>
-
+                    <h3>Trading Strategies</h3>
                     <p>
-                        Discover proven trading strategies suitable
-                        for different market conditions.
+                        Explore different trading approaches and learn how traders
+                        analyze the market.
                     </p>
-
+                    <a href="strategies.html">View strategies →</a>
                 </article>
 
-
                 <article class="feature-card">
-
-                    <div class="feature-icon" aria-hidden="true">
-                        🛡️
-                    </div>
-
-                    <h3>
-                        Risk Management
-                    </h3>
-
+                    <h3>Market Analysis</h3>
                     <p>
-                        Learn how to protect your trading capital
-                        using proper risk management techniques.
+                        Learn about price action, technical analysis, market structure,
+                        and important trading concepts.
                     </p>
-
+                    <a href="resources.html">Explore resources →</a>
                 </article>
 
-
                 <article class="feature-card">
-
-                    <div class="feature-icon" aria-hidden="true">
-                        🧠
-                    </div>
-
-                    <h3>
-                        Trading Psychology
-                    </h3>
-
+                    <h3>Risk Management</h3>
                     <p>
-                        Develop discipline, patience, and emotional
-                        control for consistent trading performance.
+                        Understand why position sizing, stop losses, and risk-to-reward
+                        planning are important parts of trading.
                     </p>
-
+                    <a href="resources.html">Learn more →</a>
                 </article>
-
 
             </div>
-
         </section>
-
-
-        <!-- =========================
-             FOREX ACADEMY
-        ========================== -->
-
-        <section class="academy-section">
-
-
-            <div class="academy-title">
-
-                <p class="eyebrow">
-                    LEARN • PRACTICE • IMPROVE
-                </p>
-
-                <h2>
-                    Your Forex Learning Journey
-                </h2>
-
-                <p>
-                    Start with the fundamentals and gradually build
-                    the knowledge needed to understand the market.
-                </p>
-
-            </div>
-
-
-            <div class="academy-grid">
-
-
-                <article class="academy-card">
-
-                    <div class="academy-icon" aria-hidden="true">
-                        📚
-                    </div>
-
-                    <h3>
-                        Learn the Basics
-                    </h3>
-
-                    <p>
-                        Understand currency pairs, market structure,
-                        support and resistance, and other essential
-                        Forex concepts.
-                    </p>
-
-                    <a
-                        href="resources.html"
-                        class="academy-button"
-                    >
-                        Start Learning
-                    </a>
-
-                </article>
-
-
-                <article class="academy-card">
-
-                    <div class="academy-icon" aria-hidden="true">
-                        📈
-                    </div>
-
-                    <h3>
-                        Study Strategies
-                    </h3>
-
-                    <p>
-                        Explore different approaches to analyzing
-                        price movement and identifying potential setups.
-                    </p>
-
-                    <a
-                        href="strategies.html"
-                        class="academy-button"
-                    >
-                        View Strategies
-                    </a>
-
-                </article>
-
-
-                <article class="academy-card">
-
-                    <div class="academy-icon" aria-hidden="true">
-                        🛡️
-                    </div>
-
-                    <h3>
-                        Manage Risk
-                    </h3>
-
-                    <p>
-                        Learn why position sizing, stop losses, and
-                        risk management are important parts of trading.
-                    </p>
-
-                    <a
-                        href="resources.html"
-                        class="academy-button"
-                    >
-                        Learn Risk
-                    </a>
-
-                </article>
-
-
-                <article class="academy-card">
-
-                    <div class="academy-icon" aria-hidden="true">
-                        🧠
-                    </div>
-
-                    <h3>
-                        Build Discipline
-                    </h3>
-
-                    <p>
-                        Develop patience and emotional discipline
-                        instead of allowing fear and greed to control
-                        your decisions.
-                    </p>
-
-                    <a
-                        href="resources.html"
-                        class="academy-button"
-                    >
-                        Learn More
-                    </a>
-
-                </article>
-
-
-            </div>
-
-        </section>
-
-
-        <!-- =========================
-             FEATURED STRATEGIES
-        ========================== -->
-
-        <section>
-
-            <div class="section-heading">
-
-                <h2>
-                    Featured Trading Strategies
-                </h2>
-
-                <p>
-                    Get an introduction to several approaches used
-                    by traders when analyzing the Forex market.
-                </p>
-
-            </div>
-
-
-            <div class="feature-grid">
-
-
-                <article class="feature-card">
-
-                    <div class="feature-icon" aria-hidden="true">
-                        📉
-                    </div>
-
-                    <span class="forex-badge">
-                        Price Action
-                    </span>
-
-                    <h3>
-                        Price Action
-                    </h3>
-
-                    <p>
-                        Learn to read market structure and price
-                        movement without relying entirely on indicators.
-                    </p>
-
-                </article>
-
-
-                <article class="feature-card">
-
-                    <div class="feature-icon" aria-hidden="true">
-                        🚀
-                    </div>
-
-                    <span class="forex-badge gold">
-                        Breakout
-                    </span>
-
-                    <h3>
-                        Breakout Trading
-                    </h3>
-
-                    <p>
-                        Identify strong price movements after key
-                        support and resistance levels break.
-                    </p>
-
-                </article>
-
-
-                <article class="feature-card">
-
-                    <div class="feature-icon" aria-hidden="true">
-                        📊
-                    </div>
-
-                    <span class="forex-badge blue">
-                        Swing Trading
-                    </span>
-
-                    <h3>
-                        Swing Trading
-                    </h3>
-
-                    <p>
-                        Learn how traders can hold positions for
-                        several days to capture larger market moves.
-                    </p>
-
-                </article>
-
-
-            </div>
-
-
-            <div style="text-align: center; margin-top: 2rem;">
-
-                <a
-                    href="strategies.html"
-                    class="btn"
-                >
-                    View All Strategies
-                </a>
-
-            </div>
-
-        </section>
-
-
-        <!-- =========================
-             START LEARNING
-        ========================== -->
-
-        <section class="trading-plan-section">
-
-            <div class="section-heading">
-
-                <h2>
-                    Start Learning Today
-                </h2>
-
-                <p>
-                    Explore more than 15 trading strategies and
-                    improve your understanding of the Forex market.
-                </p>
-
-                <a
-                    href="strategies.html"
-                    class="btn"
-                >
-                    View All Strategies
-                </a>
-
-            </div>
-
-        </section>
-
 
     </main>
 
-
-    <!-- =========================
-         FOOTER
-    ========================== -->
-
     <footer class="site-footer">
-
-
         <div class="footer-content">
-
-
-            <div>
-
-                <h2>
-                    Forex Trading Academy
-                </h2>
-
-                <p>
-                    An educational resource for learning about
-                    Forex trading, strategies, risk management,
-                    and trading psychology.
-                </p>
-
-            </div>
-
-
-            <div>
-
-                <h2>
-                    Quick Links
-                </h2>
-
-                <div class="footer-links">
-
-                    <a href="index.html">
-                        Home
-                    </a>
-
-                    <a href="strategies.html">
-                        Strategies
-                    </a>
-
-                    <a href="resources.html">
-                        Resources
-                    </a>
-
-                    <a href="attributions.html">
-                        Attributions
-                    </a>
-
-                </div>
-
-            </div>
-
-
-            <div class="footer-video">
-
-                <h2>
-                    Project Video
-                </h2>
-
-                <p>
-                    <a
-                        href="https://www.youtube.com/"
-                        target="_blank"
-                        rel="noopener"
-                    >
-                        View JavaScript Demonstration
-                    </a>
-                </p>
-
-            </div>
-
-
-        </div>
-
-
-        <div class="footer-bottom">
+            <h2>Forex Trading Academy</h2>
 
             <p>
-                © <span id="current-year">2026</span>
-                Forex Trading Academy
+                Educational information for learning about forex trading.
             </p>
 
-            <p>
-                Last Modified:
-                <span id="lastModified"></span>
-            </p>
+            <div class="footer-links">
+                <a href="attributions.html">Attributions</a>
+                <a href="siteplan.html">Site Plan</a>
+                <a href="#" id="video-link">JavaScript Demonstration</a>
+            </div>
 
+            <p class="copyright">
+                © <span id="current-year"></span> Forex Trading Academy | Believe Egwabor
+            </p>
         </div>
-
-
     </footer>
 
-
-    <!-- JavaScript -->
-    <script
-        type="module"
-        src="js/main.js"
-    ></script>
-
 </body>
-
 </html>

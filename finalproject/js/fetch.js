@@ -159,21 +159,15 @@ function toggleFavorite(id) {
 =========================== */
 
 if (searchInput) {
-
     searchInput.addEventListener("input", () => {
-
-        const keyword = searchInput.value.toLowerCase();
+        const keyword = searchInput.value.trim().toLowerCase();
 
         const filtered = strategies.filter(strategy =>
-
-            strategy.name.toLowerCase().includes(keyword) ||
-
-            strategy.category.toLowerCase().includes(keyword)
-
+            Object.values(strategy).some(value =>
+                String(value).toLowerCase().includes(keyword)
+            )
         );
 
         displayStrategies(filtered);
-
     });
-
 }

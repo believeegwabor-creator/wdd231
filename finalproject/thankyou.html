@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Message Received | TradeWise</title>
+
+    <meta
+        name="description"
+        content="Confirmation page for TradeWise contact form submissions."
+    >
+
+    <meta name="author" content="Believe Egwabor">
+
+    <meta property="og:title" content="Message Received | TradeWise">
+    <meta
+        property="og:description"
+        content="Your TradeWise message has been received."
+    >
+    <meta property="og:type" content="website">
+
+    <link rel="icon" href="favicon.ico">
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/larger.css">
+
+    <script type="module" src="js/form.js"></script>
+    <script type="module" src="js/main.js"></script>
+</head>
+
+<body>
+
+    <header class="site-header">
+        <div class="header-container">
+
+            <a href="index.html" class="logo" aria-label="TradeWise Home">
+                <span class="logo-icon">📊</span>
+                <span>TradeWise</span>
+            </a>
+
+            <button
+                id="menu-button"
+                class="menu-button"
+                aria-label="Open navigation menu"
+                aria-expanded="false"
+                aria-controls="primary-navigation"
+                type="button"
+            >
+                ☰
+            </button>
+
+            <nav id="primary-navigation" class="navigation">
+                <a href="index.html">Home</a>
+                <a href="strategies.html">Strategies</a>
+                <a href="resources.html">Resources</a>
+            </nav>
+
+        </div>
+    </header>
+
+    <main>
+
+        <section class="form-result-section">
+
+            <div class="form-result">
+
+                <p class="eyebrow">MESSAGE RECEIVED</p>
+
+                <h1>Thank You!</h1>
+
+                <p>
+                    Your message has been submitted successfully.
+                    Here is the information you provided:
+                </p>
+
+                <div class="submitted-data">
+
+                    <div class="submitted-item">
+                        <span class="submitted-label">Name</span>
+                        <span id="submitted-name">Loading...</span>
+                    </div>
+
+                    <div class="submitted-item">
+                        <span class="submitted-label">Email</span>
+                        <span id="submitted-email">Loading...</span>
+                    </div>
+
+                    <div class="submitted-item">
+                        <span class="submitted-label">Topic</span>
+                        <span id="submitted-topic">Loading...</span>
+                    </div>
+
+                    <div class="submitted-item">
+                        <span class="submitted-label">Message</span>
+                        <span id="submitted-message">Loading...</span>
+                    </div>
+
+                </div>
+
+                <a href="resources.html" class="button">
+                    Back to Resources
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+
+        <div class="footer-content">
+
+            <div>
+                <h2>TradeWise</h2>
+
+                <p>
+                    A simple educational guide for understanding
+                    trading concepts and strategies.
+                </p>
+            </div>
+
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="strategies.html">Strategies</a>
+                <a href="resources.html">Resources</a>
+                <a href="attributions.html">Attributions</a>
+            </div>
+
+            <div class="footer-video">
+                <a
+                    href="YOUR_VIDEO_LINK_HERE"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    Project Demonstration Video
+                </a>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+
+            <p>
+                &copy; <span id="current-year"></span> TradeWise.
+                All rights reserved.
+            </p>
+
+            <p>
+                Last Modified:
+                <span id="lastModified"></span>
+            </p>
+
+        </div>
+
+    </footer>
+
+</body>
+</html>

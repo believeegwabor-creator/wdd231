@@ -1,209 +1,322 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Trading Strategies | Forex Trading Academy</title>
+    <title>Forex Trading Academy | Trading Strategies</title>
 
-    <meta name="description"
-        content="Explore Forex trading strategies, risk management techniques, and trading education.">
+    <meta
+        name="description"
+        content="Explore forex trading strategies, including price action, smart money concepts, risk management, and technical analysis."
+    >
 
     <meta name="author" content="Believe Egwabor">
 
     <!-- Open Graph -->
-    <meta property="og:title" content="Forex Trading Academy">
-    <meta property="og:description"
-        content="Learn Forex Trading from Beginner to Professional.">
-
+    <meta property="og:title" content="Forex Trading Academy | Trading Strategies">
+    <meta
+        property="og:description"
+        content="Explore forex trading strategies and learn about technical analysis, market structure, smart money concepts, and risk management."
+    >
+    <meta
+        property="og:image"
+        content="https://believeegwabor-creator.github.io/wdd231/finalproject/images/forex-trading.jpg"
+    >
+    <meta
+        property="og:url"
+        content="https://believeegwabor-creator.github.io/wdd231/finalproject/strategies.html"
+    >
     <meta property="og:type" content="website">
 
-    <meta property="og:image"
-        content="images/hero.webp">
-
-    <meta property="og:url"
-        content="https://yourusername.github.io/wdd231/finalproject/strategies.html">
-
+    <!-- Favicon -->
     <link rel="icon" href="favicon.ico">
 
     <!-- Google Fonts -->
-
-    <link rel="preconnect"
-        href="https://fonts.googleapis.com">
-
-    <link rel="preconnect"
-        href="https://fonts.gstatic.com"
-        crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
     <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Roboto:wght@400;500&display=swap"
-        rel="stylesheet">
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600;700&display=swap"
+        rel="stylesheet"
+    >
 
+    <!-- CSS -->
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/base.css">
-    <link rel="stylesheet" href="css/larger.css">
-
-    <script type="module" src="js/main.js"></script>
+    <link rel="stylesheet" href="css/styles.css">
 
 </head>
 
 <body>
 
-<header>
+    <!-- HEADER -->
+    <header class="site-header">
 
-    <div class="logo">
+        <div class="header-container">
 
-        <h1>Forex Trading Academy</h1>
+            <a href="index.html" class="logo">
+                <span class="logo-icon">📈</span>
 
-    </div>
+                <div class="logo-text">
+                    <strong>Forex Trading Academy</strong>
+                    <span>Learn. Practice. Trade.</span>
+                </div>
+            </a>
 
-    <button
-        id="menuBtn"
-        aria-label="Open Navigation">
+            <button
+                id="menu-button"
+                aria-label="Open navigation menu"
+                aria-expanded="false"
+                aria-controls="primary-navigation"
+            >
+                ☰
+            </button>
 
-        ☰
+            <nav id="primary-navigation">
 
-    </button>
+                <ul class="navigation">
 
-    <nav id="navMenu">
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
 
-        <a href="index.html">Home</a>
+                    <li>
+                        <a href="strategies.html" class="active">
+                            Strategies
+                        </a>
+                    </li>
 
-        <a
-            href="strategies.html"
-            class="active">
+                    <li>
+                        <a href="resources.html">
+                            Resources
+                        </a>
+                    </li>
 
-            Strategies
+                </ul>
 
-        </a>
+            </nav>
 
-        <a href="resources.html">
+        </div>
 
-            Resources
+    </header>
 
-        </a>
 
-    </nav>
+    <!-- MAIN -->
+    <main>
 
-</header>
+        <!-- PAGE HERO -->
+        <section class="page-hero">
 
-<main>
+            <div class="section-heading">
 
-<section class="hero">
+                <h1>Forex Trading Strategies</h1>
 
-    <h2>
+                <p>
+                    Explore different trading strategies and learn how
+                    traders analyze the forex market.
+                </p>
 
-        Trading Strategies
+            </div>
 
-    </h2>
+        </section>
 
-    <p>
 
-        Browse professional Forex trading strategies
-        used by traders around the world.
+        <!-- SEARCH -->
+        <section class="strategy-search">
 
-    </p>
+            <label for="search">
+                Search Trading Strategies
+            </label>
 
-</section>
+            <input
+                type="search"
+                id="search"
+                name="search"
+                placeholder="Search by strategy or category..."
+                autocomplete="off"
+            >
 
-<section class="controls">
+        </section>
 
-    <h2>
 
-        Search Strategies
+        <!-- STRATEGIES -->
+        <section class="strategies-section">
 
-    </h2>
+            <div class="section-heading">
 
-    <input
+                <h2>Trading Strategies</h2>
 
-        type="search"
+                <p>
+                    Select a strategy to learn more about it.
+                </p>
 
-        id="search"
+            </div>
 
-        placeholder="Search strategy..."
+            <!-- JavaScript will generate the strategy cards here -->
+            <div
+                id="strategy-container"
+                class="strategy-grid"
+            ></div>
 
-        aria-label="Search trading strategies">
+        </section>
 
-</section>
 
-<section
-    id="strategy-container"
-    class="strategy-grid">
+        <!-- LEARNING SECTION -->
+        <section class="trading-plan-section">
 
-    <!-- Cards generated by JavaScript -->
+            <div class="section-heading">
 
-</section>
+                <h2>Keep Learning</h2>
 
-</main>
+                <p>
+                    Successful trading requires knowledge,
+                    discipline, risk management, and consistent practice.
+                </p>
 
-<!-- ======================
-     MODAL
-======================= -->
+            </div>
 
-<dialog id="strategy-modal">
+        </section>
 
-    <button
+    </main>
 
-        id="close-modal"
 
-        aria-label="Close">
+    <!-- FOOTER -->
+    <footer class="site-footer">
 
-        ✕
+        <div class="footer-content">
 
-    </button>
+            <div>
 
-    <h2 id="modal-title"></h2>
+                <h2>Forex Trading Academy</h2>
 
-    <p id="modal-category"></p>
+                <p>
+                    An educational resource for learning about
+                    forex trading, strategies, risk management,
+                    and trading psychology.
+                </p>
 
-    <p id="modal-timeframe"></p>
+            </div>
 
-    <p id="modal-risk"></p>
 
-    <p id="modal-difficulty"></p>
+            <div>
 
-    <p id="modal-description"></p>
+                <h2>Quick Links</h2>
 
-</dialog>
+                <div class="footer-links">
 
-<footer>
+                    <a href="index.html">
+                        Home
+                    </a>
 
-<p>
+                    <a href="strategies.html">
+                        Strategies
+                    </a>
 
-© 2026 Forex Trading Academy
+                    <a href="resources.html">
+                        Resources
+                    </a>
 
-</p>
+                    <a href="attributions.html">
+                        Attributions
+                    </a>
 
-<p>
+                </div>
 
-<a href="attributions.html">
+            </div>
 
-Attributions
 
-</a>
+            <div class="footer-video">
 
-</p>
+                <h2>Project Video</h2>
 
-<p>
+                <p>
+                    <a
+                        href="#"
+                        target="_blank"
+                        rel="noopener"
+                    >
+                        JavaScript Demonstration
+                    </a>
+                </p>
 
-<a href="#">
+            </div>
 
-Project Demonstration Video
+        </div>
 
-</a>
 
-</p>
+        <div class="footer-bottom">
 
-<p>
+            <p>
+                © <span id="current-year">2026</span>
+                Forex Trading Academy
+            </p>
 
-Last Modified:
+            <p>
+                WDD 231
+            </p>
 
-<span id="lastModified"></span>
+        </div>
 
-</p>
+    </footer>
 
-</footer>
+
+    <!-- MODAL -->
+    <dialog id="strategy-modal">
+
+        <div class="modal-content">
+
+            <button
+                id="close-modal"
+                class="close-modal"
+                aria-label="Close strategy details"
+            >
+                ×
+            </button>
+
+            <h2 id="modal-title"></h2>
+
+            <p>
+                <strong>Category:</strong>
+                <span id="modal-category"></span>
+            </p>
+
+            <p>
+                <strong>Timeframe:</strong>
+                <span id="modal-timeframe"></span>
+            </p>
+
+            <p>
+                <strong>Risk:</strong>
+                <span id="modal-risk"></span>
+            </p>
+
+            <p>
+                <strong>Difficulty:</strong>
+                <span id="modal-difficulty"></span>
+            </p>
+
+            <p id="modal-description"></p>
+
+        </div>
+
+    </dialog>
+
+
+    <!-- JAVASCRIPT -->
+    <script
+        type="module"
+        src="js/navigation.js"
+    ></script>
+
+    <script
+        type="module"
+        src="js/fetch.js"
+    ></script>
+
+    <script
+        type="module"
+        src="js/main.js"
+    ></script>
 
 </body>
 </html>
